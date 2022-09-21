@@ -41,8 +41,9 @@ function addToTable(table, population, area, addEmployment) {
   cell2.innerHTML = population;
   cell3.innerHTML = addEmployment;
   let num = addEmployment / population;
-  cell4.innerHTML = Math.round((num + Number.EPSILON) * 100) / 100;
-  if (num > 0.45) {
+  let numRounder = Math.round((num + Number.EPSILON) * 100) / 100;
+  cell4.innerHTML = numRounder;
+  if (numRounder > 0.45) {
     row.id = "goodData";
   } else if (num < 0.25) {
     row.id = "badData";
