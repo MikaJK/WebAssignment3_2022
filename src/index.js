@@ -44,9 +44,9 @@ function addToTable(table, population, area, addEmployment) {
   let numRounder = Math.round((num + Number.EPSILON) * 100) / 100;
   cell4.innerHTML = numRounder;
   if (numRounder > 0.45) {
-    row.id = "goodData";
+    row.style.backgroundColor = "#abffbd";
   } else if (numRounder < 0.25) {
-    row.id = "badData";
+    row.style.backgroundColor = "#ff9e9e";
   }
 }
 
