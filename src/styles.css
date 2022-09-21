@@ -6,6 +6,10 @@ body {
   font-style: italic;
 }
 
+tr{
+  background-color: #ffffff
+}
+
 th {
   background-color: #b7d0ff;
   padding: 12px 0 12px 6px;
