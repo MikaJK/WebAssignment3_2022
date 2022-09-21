@@ -45,7 +45,7 @@ function addToTable(table, population, area, addEmployment) {
   cell4.innerHTML = numRounder;
   if (numRounder > 0.45) {
     row.id = "goodData";
-  } else if (num < 0.25) {
+  } else if (numRounder < 0.25) {
     row.id = "badData";
   }
 }
